@@ -299,6 +299,12 @@ impl V2 {
             root: String::from(UNIFIED_MOUNTPOINT),
         }
     }
+
+    pub fn new_with_root(root: &str) -> V2 {
+        V2 {
+            root: String::from(root),
+        }
+    }
 }
 
 impl Default for V2 {
